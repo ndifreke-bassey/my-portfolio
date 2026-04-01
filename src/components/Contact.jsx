@@ -27,7 +27,9 @@ export default function Contact() {
             viewport={{ once: true, amount: 0.2 }}
             name="contact"
             method="POST"
+            action="/thank-you"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             className="glass-panel rounded-3xl p-5 sm:p-6"
           >
             <input type="hidden" name="form-name" value="contact" />
