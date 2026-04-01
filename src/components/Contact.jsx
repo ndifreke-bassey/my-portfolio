@@ -19,12 +19,20 @@ export default function Contact() {
     setSubmitState('submitting')
 
     const form = e.target
-    const data = new FormData(form)
+    const formData = new FormData(form)
+
+    const params = new URLSearchParams()
+    for (const [key, value] of formData.entries()) {
+      params.append(key, value)
+    }
 
     try {
       const response = await fetch('/', {
         method: 'POST',
-        body: data,
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: params.toString(),
       })
 
       if (response.ok) {
