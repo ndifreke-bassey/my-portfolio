@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Github, Linkedin, Mail, MessageCircleMore, SendHorizonal } from 'lucide-react'
 import SectionTitle from './SectionTitle'
@@ -11,6 +12,32 @@ const iconMap = {
 }
 
 export default function Contact() {
+  const [submitState, setSubmitState] = useState('idle')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setSubmitState('submitting')
+
+    const form = e.target
+    const data = new FormData(form)
+
+    try {
+      const response = await fetch('/', {
+        method: 'POST',
+        body: data,
+      })
+
+      if (response.ok) {
+        setSubmitState('success')
+        form.reset()
+      } else {
+        setSubmitState('error')
+      }
+    } catch (err) {
+      setSubmitState('error')
+    }
+  }
+
   return (
     <section id="contact" className="section-anchor py-6 sm:py-8">
       <div className="section-shell glass-panel">
@@ -27,7 +54,7 @@ export default function Contact() {
             viewport={{ once: true, amount: 0.2 }}
             name="contact"
             method="POST"
-            action="/thank-you.html"
+            onSubmit={handleSubmit}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             className="glass-panel rounded-3xl p-5 sm:p-6"
@@ -73,9 +100,25 @@ export default function Contact() {
               </label>
             </div>
 
-            <button type="submit" className="btn-primary mt-5 w-full sm:w-auto">
-              <SendHorizonal className="h-4 w-4" /> Send Message
+            <button
+              type="submit"
+              className="btn-primary mt-5 w-full sm:w-auto"
+              disabled={submitState === 'submitting'}
+            >
+              <SendHorizonal className="h-4 w-4" />
+              {submitState === 'submitting' ? ' Sending...' : ' Send Message'}
             </button>
+
+            {submitState === 'success' && (
+              <p className="mt-3 text-sm font-medium text-emerald-300">
+                Thank you! Your message has been sent successfully.
+              </p>
+            )}
+            {submitState === 'error' && (
+              <p className="mt-3 text-sm font-medium text-rose-300">
+                Something went wrong. Please try again or email me directly.
+              </p>
+            )}
           </motion.form>
 
           <motion.div
