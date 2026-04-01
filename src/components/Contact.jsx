@@ -31,6 +31,11 @@ export default function Contact() {
             className="glass-panel rounded-3xl p-5 sm:p-6"
           >
             <input type="hidden" name="form-name" value="contact" />
+            <div style={{ display: 'none' }}>
+              <label>
+                Don’t fill this out if you're human: <input name="bot-field" />
+              </label>
+            </div>
             <div className="grid gap-4">
               <label className="grid gap-2 text-sm text-slate-200">
                 <span>Name</span>
