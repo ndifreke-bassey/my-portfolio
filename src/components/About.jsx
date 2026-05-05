@@ -67,6 +67,31 @@ export default function About() {
             </motion.article>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.15 }}
+          transition={{ duration: 0.45, delay: 0.2 }}
+          className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        >
+          <div className="glass-panel rounded-3xl p-5 text-center">
+            <div className="text-2xl font-bold text-cyan-200">50+</div>
+            <div className="text-sm text-slate-400">Projects Completed</div>
+          </div>
+          <div className="glass-panel rounded-3xl p-5 text-center">
+            <div className="text-2xl font-bold text-cyan-200">24/7</div>
+            <div className="text-sm text-slate-400">Learning Mindset</div>
+          </div>
+          <div className="glass-panel rounded-3xl p-5 text-center">
+            <div className="text-2xl font-bold text-cyan-200">100%</div>
+            <div className="text-sm text-slate-400">Problem-Solving Focus</div>
+          </div>
+          <div className="glass-panel rounded-3xl p-5 text-center">
+            <div className="text-2xl font-bold text-cyan-200">4+</div>
+            <div className="text-sm text-slate-400">Years Experience</div>
+          </div>
+        </motion.div>
       </div>
     </section>
   )

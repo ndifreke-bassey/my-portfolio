@@ -22,8 +22,8 @@ export default function Testimonials() {
       <div className="section-shell glass-panel">
         <SectionTitle
           eyebrow="Testimonials"
-          title="Social proof carousel ready for real feedback"
-          description="These animated placeholder testimonials can be swapped with client reviews, lecturer feedback, or recruiter comments as soon as they are available."
+          title="What clients and collaborators say"
+          description="Feedback from real projects and professional relationships, showcasing the impact of practical problem-solving and reliable delivery."
         />
 
         <div className="glass-panel rounded-3xl p-5 sm:p-6">

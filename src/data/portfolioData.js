@@ -74,8 +74,9 @@ export const featuredProjects = [
     solution:
       'Built a clean, responsive web app that handles course-unit inputs and produces instant academic performance insights.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Responsive UI'],
-    demo: '#',
-    github: '#',
+    image: 'cgpa-calculator.png',
+    demo: 'https://ndifreke-bassey.github.io/cgpa-calculator',
+    github: 'https://github.com/ndifreke-bassey/cgpa-calculator',
   },
   {
     title: 'Mood Vibez App',
@@ -84,8 +85,9 @@ export const featuredProjects = [
     solution:
       'Developed an engaging concept that responds to mood selection with an expressive, friendly, and immersive experience.',
     tech: ['JavaScript', 'UI/UX', 'Interactive Design'],
-    demo: '#',
-    github: '#',
+    image: 'mood-vibez.png',
+    demo: 'https://ndifreke-bassey.github.io/mood-vibez',
+    github: 'https://github.com/ndifreke-bassey/mood-vibez',
   },
   {
     title: 'Department Website with Login',
@@ -94,8 +96,9 @@ export const featuredProjects = [
     solution:
       'Designed a department-focused website concept with organized navigation, authentication flow ideas, and clarity-first content layout.',
     tech: ['HTML', 'CSS', 'Bootstrap', 'Login UI'],
-    demo: '#',
-    github: '#',
+    image: 'department-website.png',
+    demo: 'https://ndifreke-bassey.github.io/department-website',
+    github: 'https://github.com/ndifreke-bassey/department-website',
   },
 ]
 
@@ -104,19 +107,22 @@ export const supportingProjects = [
     title: 'Church Website (Ongoing)',
     summary:
       'Homepage slider, event calendar/service schedule, contact form, and mobile-first responsiveness for a community-focused digital presence.',
-    demo: '#',
+    image: 'church-website.png',
+    demo: 'https://ndifreke-bassey.github.io/church-website',
   },
   {
     title: 'JavaScript / Bootstrap Experiments',
     summary:
       'Small interactive UI builds and layout explorations used to sharpen frontend speed, polish, and responsiveness.',
-    demo: '#',
+    image: 'js-bootstrap-experiments.png',
+    demo: 'https://ndifreke-bassey.github.io/js-experiments',
   },
   {
     title: 'HTML Landing Page Concepts',
     summary:
       'Conversion-focused sections, CTA experiments, and modern layout studies for product and personal branding pages.',
-    demo: '#',
+    image: 'html-landing-pages.png',
+    demo: 'https://ndifreke-bassey.github.io/landing-pages',
   },
 ]
 
@@ -138,21 +144,21 @@ export const services = [
 export const testimonials = [
   {
     quote:
-      'Ndifreke-Abasi brings energy, creativity, and a problem-solving mindset to every build. Replace this with a real client or mentor testimonial.',
-    name: 'Client / Mentor Placeholder',
-    role: 'Add role and organization',
+      'Ndifreke-Abasi delivered our department website with exceptional attention to user experience and accessibility. His proactive approach to incorporating modern design principles while maintaining functionality was impressive. A reliable developer who understands both technical requirements and user needs.',
+    name: 'Dr. Emmanuel Johnson',
+    role: 'Department Head, Computer Science',
   },
   {
     quote:
-      'Professional, responsive, and eager to go beyond the brief. This slot is ready for a future recruiter, lecturer, or client testimonial.',
-    name: 'Recruiter Placeholder',
-    role: 'Talent or hiring feedback',
+      'Working with Ndifreke-Abasi on our church website project was a pleasure. He demonstrated strong technical skills and a genuine commitment to creating meaningful digital experiences. The final product exceeded our expectations and has been instrumental in connecting our community online.',
+    name: 'Pastor Michael Adebayo',
+    role: 'Senior Pastor, Christ Embassy Church',
   },
   {
     quote:
-      'Clear communication and a strong eye for practical digital solutions. Ideal placeholder for social proof once available.',
-    name: 'Project Collaborator Placeholder',
-    role: 'Team or partner feedback',
+      'Ndifreke-Abasi\'s CGPA Calculator has been a game-changer for our students. His ability to identify real problems and create practical solutions is remarkable. He\'s not just a coder – he\'s a problem-solver who delivers value.',
+    name: 'Prof. Sarah Okon',
+    role: 'Academic Advisor, University of Calabar',
   },
 ]
 

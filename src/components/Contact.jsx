@@ -164,9 +164,16 @@ export default function Contact() {
             </div>
 
             <div className="glass-panel rounded-3xl p-5 text-sm leading-7 text-slate-300">
-              <p className="font-semibold text-cyan-200">Quick update note</p>
+              <p className="font-semibold text-cyan-200">Response Time</p>
               <p className="mt-2">
-                Your real contact channels and updated CV are now connected. You can drop in testimonials, project demos, and extra content snippets whenever you’re ready.
+                I typically respond to messages within 24 hours. For urgent inquiries, feel free to call or WhatsApp me directly.
+              </p>
+            </div>
+
+            <div className="glass-panel rounded-3xl p-5 text-sm leading-7 text-slate-300">
+              <p className="font-semibold text-cyan-200">Current Availability</p>
+              <p className="mt-2">
+                Available for freelance projects, full-time opportunities, and consulting work. Let's discuss how we can collaborate!
               </p>
             </div>
           </motion.div>

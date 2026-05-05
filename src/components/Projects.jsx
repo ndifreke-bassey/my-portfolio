@@ -3,6 +3,16 @@ import { ArrowUpRight, Github, Layers3 } from 'lucide-react'
 import SectionTitle from './SectionTitle'
 import { featuredProjects, supportingProjects } from '../data/portfolioData'
 
+// Import project images
+const projectImages = {
+  'cgpa-calculator.png': new URL('../assets/images/cgpa-calculator.png', import.meta.url).href,
+  'mood-vibez.png': new URL('../assets/images/mood-vibez.png', import.meta.url).href,
+  'department-website.png': new URL('../assets/images/department-website.png', import.meta.url).href,
+  'church-website.png': new URL('../assets/images/church-website.png', import.meta.url).href,
+  'js-bootstrap-experiments.png': new URL('../assets/images/js-bootstrap-experiments.png', import.meta.url).href,
+  'html-landing-pages.png': new URL('../assets/images/html-landing-pages.png', import.meta.url).href,
+}
+
 export default function Projects() {
   return (
     <section id="projects" className="section-anchor py-6 sm:py-8">
@@ -24,6 +34,18 @@ export default function Projects() {
               className="tilt-card glass-panel rounded-3xl p-5"
             >
               <span className="badge-pill mb-3">Featured / Tier 1</span>
+              {project.image && (
+                <div className="mb-4 overflow-hidden rounded-2xl">
+                  <img
+                    src={projectImages[project.image]}
+                    alt={`${project.title} screenshot`}
+                    className="h-48 w-full object-cover transition-transform duration-300 hover:scale-105"
+                    onError={(e) => {
+                      e.target.style.display = 'none'
+                    }}
+                  />
+                </div>
+              )}
               <h3 className="font-display text-xl font-semibold text-white">{project.title}</h3>
 
               <div className="mt-4 space-y-3 text-sm leading-7 text-slate-300">
@@ -69,6 +91,18 @@ export default function Projects() {
                 transition={{ duration: 0.4, delay: index * 0.08 }}
                 className="tilt-card glass-panel rounded-3xl p-5"
               >
+                {project.image && (
+                  <div className="mb-3 overflow-hidden rounded-xl">
+                    <img
+                      src={projectImages[project.image]}
+                      alt={`${project.title} screenshot`}
+                      className="h-32 w-full object-cover transition-transform duration-300 hover:scale-105"
+                      onError={(e) => {
+                        e.target.style.display = 'none'
+                      }}
+                    />
+                  </div>
+                )}
                 <h3 className="font-display text-lg font-semibold text-white">{project.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-300">{project.summary}</p>
                 <a href={project.demo} className="mt-4 inline-flex items-center gap-2 text-sm font-medium text-cyan-200 transition hover:text-cyan-100">

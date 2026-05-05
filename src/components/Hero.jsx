@@ -42,7 +42,7 @@ export default function Hero() {
   }, [displayedText, isDeleting, wordIndex])
 
   return (
-    <section id="home" className="section-anchor relative py-10 sm:py-14 lg:py-18">
+    <section id="home" className="section-anchor relative py-8 sm:py-12 lg:py-16">
       <div className="section-shell glass-panel neon-border overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/8 via-transparent to-fuchsia-500/8" />
 
