@@ -11,6 +11,7 @@ const projectImages = {
   'church-website.png': new URL('../assets/images/church-website.png', import.meta.url).href,
   'js-bootstrap-experiments.png': new URL('../assets/images/js-bootstrap-experiments.png', import.meta.url).href,
   'html-landing-pages.png': new URL('../assets/images/html-landing-pages.png', import.meta.url).href,
+  'graphics-designer-portfolio.png': new URL('../assets/images/graphics-designer-portfolio.png', import.meta.url).href,
 }
 
 export default function Projects() {

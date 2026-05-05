@@ -108,7 +108,7 @@ export const supportingProjects = [
     summary:
       'Homepage slider, event calendar/service schedule, contact form, and mobile-first responsiveness for a community-focused digital presence.',
     image: 'church-website.png',
-    demo: 'https://ndifreke-bassey.github.io/church-website',
+    demo: 'https://cocakaroad.netlify.app',
   },
   {
     title: 'JavaScript / Bootstrap Experiments',
@@ -123,6 +123,13 @@ export const supportingProjects = [
       'Conversion-focused sections, CTA experiments, and modern layout studies for product and personal branding pages.',
     image: 'html-landing-pages.png',
     demo: 'https://ndifreke-bassey.github.io/landing-pages',
+  },
+  {
+    title: 'Graphics Designer Portfolio',
+    summary:
+      'A creative showcase of graphic design work featuring modern layouts, branding projects, and visual design concepts for creative professionals.',
+    image: 'graphics-designer-portfolio.png',
+    demo: 'https://deegraphics.netlify.app',
   },
 ]
 
