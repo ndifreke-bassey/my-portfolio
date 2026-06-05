@@ -54,7 +54,7 @@ export default function Hero() {
               transition={{ duration: 0.45 }}
               className="badge-pill mb-5"
             >
-              <Sparkles className="h-4 w-4 text-cyan-300" /> Futuristic personal brand
+              <Sparkles className="h-4 w-4 text-cyan-300" /> Web & cybersecurity builder
             </motion.span>
 
             <motion.h1
@@ -84,7 +84,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.18 }}
               className="mt-5 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg"
             >
-              Solving real-world problems with code, security, and innovation.
+              I help teams launch secure, polished web experiences that feel modern and perform reliably.
             </motion.p>
 
             <motion.p
@@ -93,7 +93,7 @@ export default function Hero() {
               transition={{ duration: 0.65, delay: 0.24 }}
               className="mt-3 max-w-2xl text-sm leading-7 text-slate-400 sm:text-base"
             >
-              I build modern digital experiences that feel premium, perform well, and help brands, recruiters, and clients quickly understand the value I bring.
+              I build digital products that look refined, load quickly, and make it easy for clients and recruiters to see the value I deliver.
             </motion.p>
 
             <motion.div
@@ -103,10 +103,10 @@ export default function Hero() {
               className="mt-7 flex flex-wrap gap-3"
             >
               <a href="#projects" className="btn-primary">
-                View Projects <ArrowRight className="h-4 w-4" />
+                Explore Work <ArrowRight className="h-4 w-4" />
               </a>
               <a href="#contact" className="btn-secondary">
-                Contact Me
+                Hire Me
               </a>
               <a href="/Ndifreke-Abasi-Bassey-CV.pdf" download className="btn-secondary">
                 <Download className="h-4 w-4" /> Download CV
@@ -119,9 +119,9 @@ export default function Hero() {
               transition={{ duration: 0.75, delay: 0.36 }}
               className="mt-7 flex flex-wrap gap-2"
             >
-              <span className="badge-pill">Open to internships</span>
-              <span className="badge-pill">Client-ready solutions</span>
-              <span className="badge-pill">Security-minded builder</span>
+              <span className="badge-pill">Available for internships</span>
+              <span className="badge-pill">Freelance & contract work</span>
+              <span className="badge-pill">Security-aware development</span>
             </motion.div>
           </div>
 

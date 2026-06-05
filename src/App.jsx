@@ -16,7 +16,7 @@ function App() {
       <BackgroundEffects />
       <div className="grid-lines fixed inset-0 opacity-40" aria-hidden="true" />
       <Navbar />
-      <main className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <main className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-24">
         <Hero />
         <About />
         <Skills />

@@ -52,7 +52,7 @@ export default function Contact() {
         <SectionTitle
           eyebrow="Contact"
           title="Let’s build something useful, polished, and future-ready"
-          description="Use the form below for recruiter inquiries, collaborations, freelance work, or tech consulting conversations."
+          description="Send a message to discuss internships, freelance work, or technical collaborations. I typically respond within 24 hours."
         />
 
         <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
@@ -79,7 +79,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="name"
-                  placeholder="Your name"
+                  placeholder="Enter your name"
                   className="rounded-2xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-white outline-none transition focus:border-cyan-400"
                   required
                 />
@@ -90,7 +90,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="you@example.com"
+                  placeholder="yourname@example.com"
                   className="rounded-2xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-white outline-none transition focus:border-cyan-400"
                   required
                 />
@@ -101,7 +101,7 @@ export default function Contact() {
                 <textarea
                   name="message"
                   rows="6"
-                  placeholder="Tell me about the role, project, or collaboration you have in mind..."
+                  placeholder="Briefly describe the project, role, or collaboration you have in mind..."
                   className="rounded-2xl border border-slate-700 bg-slate-950/70 px-4 py-3 text-white outline-none transition focus:border-cyan-400"
                   required
                 />
@@ -114,7 +114,7 @@ export default function Contact() {
               disabled={submitState === 'submitting'}
             >
               <SendHorizonal className="h-4 w-4" />
-              {submitState === 'submitting' ? ' Sending...' : ' Send Message'}
+              {submitState === 'submitting' ? ' Sending...' : ' Send Inquiry'}
             </button>
 
             {submitState === 'success' && (
@@ -136,9 +136,9 @@ export default function Contact() {
             className="space-y-4"
           >
             <div className="glass-panel rounded-3xl p-5 sm:p-6">
-              <p className="font-display text-xl font-semibold text-white">Connect directly</p>
+              <p className="font-display text-xl font-semibold text-white">Direct contact</p>
               <p className="mt-2 text-sm leading-7 text-slate-300">
-                Replace the placeholder links below with your real channels to activate the full recruiter/client funnel.
+                Reach out via LinkedIn, GitHub, WhatsApp, or email to discuss your project, internship, or collaboration.
               </p>
 
               <div className="mt-4 grid gap-3">
@@ -164,16 +164,16 @@ export default function Contact() {
             </div>
 
             <div className="glass-panel rounded-3xl p-5 text-sm leading-7 text-slate-300">
-              <p className="font-semibold text-cyan-200">Response Time</p>
+              <p className="font-semibold text-cyan-200">Response time</p>
               <p className="mt-2">
-                I typically respond to messages within 24 hours. For urgent inquiries, feel free to call or WhatsApp me directly.
+                I usually reply within 24 hours. For faster follow-up, WhatsApp is the best option.
               </p>
             </div>
 
             <div className="glass-panel rounded-3xl p-5 text-sm leading-7 text-slate-300">
-              <p className="font-semibold text-cyan-200">Current Availability</p>
+              <p className="font-semibold text-cyan-200">Availability</p>
               <p className="mt-2">
-                Available for freelance projects, full-time opportunities, and consulting work. Let's discuss how we can collaborate!
+                Open to internships, freelance contracts, and junior developer roles. Let’s discuss how I can help bring your project to life.
               </p>
             </div>
           </motion.div>

@@ -9,8 +9,8 @@ export default function About() {
       <div className="section-shell glass-panel">
         <SectionTitle
           eyebrow="About me"
-          title="Building practical value with a future-facing mindset"
-          description="I am a growth-driven tech builder combining web development, software problem-solving, and a strong interest in cybersecurity to create work that feels useful, polished, and forward-looking."
+          title="Building secure, polished web experiences for real users"
+          description="I combine web development, software engineering, and a security mindset to deliver solutions that are easy to use, reliable, and ready for growth."
         />
 
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
@@ -25,10 +25,10 @@ export default function About() {
               <span className="text-sm font-semibold">Career direction</span>
             </div>
             <p className="text-slate-300 leading-8">
-              My journey is rooted in curiosity, practical experimentation, and a desire to solve real problems with technology. I enjoy turning ideas into clean digital products while steadily preparing for the deeper security challenges shaping the future of software.
+              I focus on turning ideas into clean, dependable digital products. My work is grounded in clarity, performance, and a practical approach to solving real user needs.
             </p>
             <p className="mt-4 text-slate-300 leading-8">
-              I build practical solutions today while preparing for tomorrow’s cybersecurity challenges.
+              I deliver polished websites and tools that look professional, work smoothly, and make it easy for clients to move forward.
             </p>
           </motion.div>
 
@@ -43,10 +43,61 @@ export default function About() {
               <span className="text-sm font-semibold">Tech philosophy</span>
             </div>
             <p className="text-slate-300 leading-8">
-              I value clarity, usability, and innovation. Every project should be functional, visually refined, and aligned with the people it is meant to serve.
+              I value clean interfaces, secure foundations, and code that can be improved over time. Good software should be easy for people to use and built to earn trust.
             </p>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="mt-8 glass-panel rounded-3xl p-5 sm:p-6"
+        >
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-200">Why choose me</p>
+          <ul className="mt-5 grid gap-3 text-sm leading-7 text-slate-300 sm:grid-cols-2">
+            <li className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              Reliable delivery with strong attention to detail.
+            </li>
+            <li className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              Security-aware development from concept to launch.
+            </li>
+            <li className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              Modern responsive interfaces designed for real users.
+            </li>
+            <li className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              Clear communication and practical results every step of the way.
+            </li>
+          </ul>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 18 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.45, delay: 0.08 }}
+          className="mt-8 glass-panel rounded-3xl p-5 sm:p-6"
+        >
+          <p className="text-sm font-semibold uppercase tracking-[0.16em] text-cyan-200">Trusted delivery</p>
+          <div className="mt-5 grid gap-3 text-sm leading-7 text-slate-300 sm:grid-cols-2">
+            <div className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              <p className="font-semibold text-white">Academic and community clients</p>
+              <p className="mt-2">Worked with academic advisors and community leaders to deliver useful web solutions.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              <p className="font-semibold text-white">Proven project outcomes</p>
+              <p className="mt-2">Each project includes a clear result and practical impact, not just visual polish.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              <p className="font-semibold text-white">Responsive, ready-to-use builds</p>
+              <p className="mt-2">Delivered websites and apps that look great on mobile, tablet, and desktop.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-700 bg-slate-950/60 p-4">
+              <p className="font-semibold text-white">Recommendations included</p>
+              <p className="mt-2">Testimonials show real feedback from collaborators and academic stakeholders.</p>
+            </div>
+          </div>
+        </motion.div>
 
         <div className="mt-7 grid gap-4">
           {timeline.map((item, index) => (

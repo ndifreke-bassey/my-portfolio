@@ -73,6 +73,8 @@ export const featuredProjects = [
       'Students needed a quicker and more reliable way to calculate GPA/CGPA without manual errors.',
     solution:
       'Built a clean, responsive web app that handles course-unit inputs and produces instant academic performance insights.',
+    result:
+      'Delivered a dependable GPA calculator that removes manual errors and provides instant academic clarity for users.',
     tech: ['HTML', 'CSS', 'JavaScript', 'Responsive UI'],
     image: 'cgpa-calculator.png',
     demo: 'https://ndifreke-bassey.github.io/cgpa-calculator',
@@ -84,6 +86,8 @@ export const featuredProjects = [
       'Users often want quick emotional relief or matching content based on their current mood.',
     solution:
       'Developed an engaging concept that responds to mood selection with an expressive, friendly, and immersive experience.',
+    result:
+      'Created an intuitive mood-driven interface that improves engagement and makes content discovery feel more personalized.',
     tech: ['JavaScript', 'UI/UX', 'Interactive Design'],
     image: 'mood-vibez.png',
     demo: 'https://ndifreke-bassey.github.io/mood-vibez',
@@ -95,6 +99,8 @@ export const featuredProjects = [
       'Students and staff needed a more structured online space for academic information and access control.',
     solution:
       'Designed a department-focused website concept with organized navigation, authentication flow ideas, and clarity-first content layout.',
+    result:
+      'Provided a polished academic website concept that improves content access and supports future login workflows.',
     tech: ['HTML', 'CSS', 'Bootstrap', 'Login UI'],
     image: 'department-website.png',
     demo: 'https://ndifreke-bassey.github.io/department-website',
@@ -104,30 +110,18 @@ export const featuredProjects = [
 
 export const supportingProjects = [
   {
-    title: 'Church Website (Ongoing)',
+    title: 'Church Website',
     summary:
-      'Homepage slider, event calendar/service schedule, contact form, and mobile-first responsiveness for a community-focused digital presence.',
+      'Delivered a mobile-first community website with event scheduling, service details, contact forms, and polished responsive design.',
     image: 'church-website.png',
     demo: 'https://cocakaroad.netlify.app',
-  },
-  {
-    title: 'JavaScript / Bootstrap Experiments',
-    summary:
-      'Small interactive UI builds and layout explorations used to sharpen frontend speed, polish, and responsiveness.',
-    image: 'js-bootstrap-experiments.png',
-    demo: 'https://ndifreke-bassey.github.io/js-experiments',
-  },
-  {
-    title: 'HTML Landing Page Concepts',
-    summary:
-      'Conversion-focused sections, CTA experiments, and modern layout studies for product and personal branding pages.',
-    image: 'html-landing-pages.png',
-    demo: 'https://ndifreke-bassey.github.io/landing-pages',
   },
   {
     title: 'Graphics Designer Portfolio',
     summary:
       'A creative showcase of graphic design work featuring modern layouts, branding projects, and visual design concepts for creative professionals.',
+    result:
+      'Showcased branding and layout skills with a polished portfolio design for creative clients.',
     image: 'graphics-designer-portfolio.png',
     demo: 'https://deegraphics.netlify.app',
   },
