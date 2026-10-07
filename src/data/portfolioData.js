@@ -2,6 +2,7 @@ export const navLinks = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
+  { label: 'My Book', href: '#my-book' },
   { label: 'Services', href: '#services' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -66,66 +67,53 @@ export const skillGroups = [
   },
 ]
 
-export const featuredProjects = [
+export const projects = [
   {
-    title: 'CGPA Calculator Web App',
-    problem:
-      'Students needed a quicker and more reliable way to calculate GPA/CGPA without manual errors.',
-    solution:
-      'Built a clean, responsive web app that handles course-unit inputs and produces instant academic performance insights.',
-    result:
-      'Delivered a dependable GPA calculator that removes manual errors and provides instant academic clarity for users.',
-    tech: ['HTML', 'CSS', 'JavaScript', 'Responsive UI'],
-    image: 'cgpa-calculator.png',
-    demo: 'https://ndifreke-bassey.github.io/cgpa-calculator',
-    github: 'https://github.com/ndifreke-bassey/cgpa-calculator',
+    title: 'CGPA Calculator',
+    description:
+      'A responsive student tool for entering courses, calculating cumulative GPA, and viewing academic classification.',
+    liveUrl: 'https://eagle-cgpa.netlify.app/',
+    githubUrl: 'https://github.com/ndifreke-bassey/cgpa-calculator',
   },
   {
-    title: 'Mood Vibez App',
-    problem:
-      'Users often want quick emotional relief or matching content based on their current mood.',
-    solution:
-      'Developed an engaging concept that responds to mood selection with an expressive, friendly, and immersive experience.',
-    result:
-      'Created an intuitive mood-driven interface that improves engagement and makes content discovery feel more personalized.',
-    tech: ['JavaScript', 'UI/UX', 'Interactive Design'],
-    image: 'mood-vibez.png',
-    demo: 'https://ndifreke-bassey.github.io/mood-vibez',
-    github: 'https://github.com/ndifreke-bassey/mood-vibez',
+    title: 'Mood Vibez PWA',
+    description:
+      'An installable mood companion that pairs random vibes with color themes, quotes, music, and sharing.',
+    liveUrl: 'https://www.google.com',
+    githubUrl: 'https://github.com/ndifreke-bassey/mood-vibe-pwa',
+    previewFallbackMessage:
+      'No live deployment is currently available. Google is a temporary URL placeholder, not a preview of this project.',
   },
   {
-    title: 'Department Website with Login',
-    problem:
-      'Students and staff needed a more structured online space for academic information and access control.',
-    solution:
-      'Designed a department-focused website concept with organized navigation, authentication flow ideas, and clarity-first content layout.',
-    result:
-      'Provided a polished academic website concept that improves content access and supports future login workflows.',
-    tech: ['HTML', 'CSS', 'Bootstrap', 'Login UI'],
-    image: 'department-website.png',
-    demo: 'https://ndifreke-bassey.github.io/department-website',
-    github: 'https://github.com/ndifreke-bassey/department-website',
+    title: 'CRESA Department Website',
+    description:
+      'A department website MVP organizing course information, staff profiles, announcements, and student resources.',
+    liveUrl: 'https://cresa.netlify.app/',
+    githubUrl: 'https://github.com/ndifreke-bassey/CRESA',
   },
-]
-
-export const supportingProjects = [
   {
-    title: 'Church Website',
-    summary:
-      'Delivered a mobile-first community website with event scheduling, service details, contact forms, and polished responsive design.',
-    image: 'church-website.png',
-    demo: 'https://cocakaroad.netlify.app',
+    title: 'Weather App',
+    description:
+      'A live weather dashboard with location detection, city search, current conditions, and a five-day forecast.',
+    liveUrl: 'https://eagle-weather.netlify.app/',
+    githubUrl: 'https://github.com/ndifreke-bassey/weather-app',
   },
   {
     title: 'Graphics Designer Portfolio',
-    summary:
-      'A creative showcase of graphic design work featuring modern layouts, branding projects, and visual design concepts for creative professionals.',
-    result:
-      'Showcased branding and layout skills with a polished portfolio design for creative clients.',
-    image: 'graphics-designer-portfolio.png',
-    demo: 'https://deegraphics.netlify.app',
+    description:
+      'A visual design portfolio showcasing branding, flyer work, selected projects, and creative services.',
+    liveUrl: 'https://deegraphics.netlify.app/',
+    githubUrl: 'https://github.com/ndifreke-bassey/dee-graphics',
   },
 ]
+
+export const featuredBook = {
+  title: 'Make Them Remember You',
+  description:
+    'A book about building your personal brand, increasing visibility, earning credibility, communicating your value, and becoming memorable for the right reasons.',
+  author: 'Ndifreke-Abasi Bassey',
+  selarUrl: 'https://selar.com/929328x5q3',
+}
 
 export const services = [
   {
