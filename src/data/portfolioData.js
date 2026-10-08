@@ -112,7 +112,7 @@ export const featuredBook = {
   description:
     'A book about building your personal brand, increasing visibility, earning credibility, communicating your value, and becoming memorable for the right reasons.',
   author: 'Ndifreke-Abasi Bassey',
-  selarUrl: 'https://selar.com/929328x5q3',
+  selarUrl: 'https://selar.com/make-them-remember-you',
 }
 
 export const services = [
